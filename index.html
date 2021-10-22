@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family Book</title>
+</head>
+<body>
+
+    <div>
+
+    <h1>My Family Book</h1>
+
+
+<div>
+<img src="Family Book.jpg" id="images">
+</div>
+<p id="names">My Family</p>
+
+<br>
+
+<button type="button" onclick="nextslide()">NEXT</button>
+
+</div>
+
+    <script>
+
+var images1= [ "Family Book.jpg", "ME.jpg", "SIS.jpg", "SISTERS TOGETHER.jpg", "MOM.jpg", "PAPA.jpg", "MAMA.jpg", "MAUSI.jpg", "NANI.jpg","NANA.jpg"];
+
+var names1= [ "My Family Book",
+ "Me", "My Sister", "We Siblings Together", 
+"My Mother", "My Father",
+"My Uncle", "My Aunt", "My Grandmother", "My Grandfather"
+];
+
+var i=0;
+
+function nextslide()
+
+{if(i ==10)
+  {
+    i=0;
+  }
+
+
+    document.getElementById("names").innerHTML = names1[i];
+
+document.getElementById("images").src= images1[i]; i++;
+}
+
+        </script>
+
+<style>
+
+body{
+    text-align: center;
+    background:linear-gradient(rgb(124, 166, 228) 40%, rgb(10, 144, 233) 60%);
+}
+
+#images{
+    width:450px;
+    height:450px;
+}
+
+</style>
+
+
+</body>
+</html>
